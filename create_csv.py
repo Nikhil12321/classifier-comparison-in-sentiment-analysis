@@ -25,7 +25,6 @@ with open("output.csv", "wb") as csv_writer:
 	writer = csv.writer(csv_writer)
 	writer.writerows(global_list_positive)
 
-writer.close()
 
 
 
@@ -44,5 +43,3 @@ for filename in os.listdir(negative_path):
 with open("output.csv", 'a') as csv_writer:
 	writer = csv.writer(csv_writer)
 	writer.writerows(global_list_negative)
-
-writer.close()
