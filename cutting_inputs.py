@@ -23,11 +23,9 @@ file_number = 0
 path = "breaks/"
 file_name_tag = "break_at_"
 global_doc = {}
-all_inputs = csv.reader(open("oo"+".csv", 'r'), delimiter=',')
+all_inputs = csv.reader(open("output"+".csv", 'r'), delimiter=',')
 
 max_full_stops = get_max_full_stops()
-print "max full stops "
-print max_full_stops
 
 for x in range(1, max_full_stops+1):
 	global_doc[x] = []
@@ -43,7 +41,6 @@ for row in all_inputs:
 			l.append(sentiment)
 			l.append(str(sentence))
 			file_number += 1
-			print file_number
 			global_doc[file_number].append(l)
 		else:
 			sentence += char
