@@ -49,7 +49,7 @@ for row in all_inputs:
 	 	for x in range(file_number+1, max_full_stops):
 	 		l = []
 	 		l.append(sentiment)
-	 		l.append("")
+	 		l.append(sentence)
 	 		global_doc[x].append(l)
 
 for key in global_doc:
