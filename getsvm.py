@@ -113,8 +113,7 @@ def svm(file_to_open):
 
 
 
-    if __name__ == "__main__":
-        import pylab as pl
+    
 
     def replaceTwoOrMore(s):
         # look for 2 or more repetitions of character and replace with the character itself
