@@ -11,7 +11,7 @@ import datetime
 from nltk.stem import*
 stemmer = PorterStemmer()
 
-new_feature_list = []
+
 
 number_of_documents = 2000.0  # number of training sets
 
@@ -19,8 +19,11 @@ counter = 1
 
 accuracy = 0
 
-weight_feature_vector = []
+
 def svm(file_to_open):
+
+    weight_feature_vector = []
+    new_feature_list = []
 
     def linear_kernel(x1, x2):
         return np.dot(x1, x2)
@@ -239,7 +242,7 @@ def svm(file_to_open):
         size_of_vector = 1.0*size_of_vector;
 
         for w in featureList:
-            
+
             if(size_of_vector <= 0 ):
                 value_of_weight = 0
             else:  
@@ -306,6 +309,7 @@ def svm(file_to_open):
         return X1, y1, X2, y2
 
     def split_train(X1, y1, X2, y2):
+        print "X1 %d y1 %d X2 %d y2 %d" %(len(X1), len(y1), len(X2), len(y2))
         X1_train = X1[:900]
         y1_train = y1[:900]
         X2_train = X2[:900]
