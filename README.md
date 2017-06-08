@@ -25,3 +25,18 @@ The main programs that call the above three are
 
 ## Where is the data
 The data can be found in output.csv 
+
+## Are any libraries used?
+We used our own SVM classifier which can be found [here](https://github.com/Nikhil12321/support-vector-machine)
+For naive bayes and maximum entropy, we used natural language toolkit
+
+## Can I see the results?
+Sure!
+![accuracy](https://github.com/Nikhil12321/minor2/blob/master/data/acc.png)
+
+![precision](https://github.com/Nikhil12321/minor2/blob/master/data/prec.png)
+
+![recall](https://github.com/Nikhil12321/minor2/blob/master/data/recall.png)
+
+![time](https://github.com/Nikhil12321/minor2/blob/master/data/timee.png)
+
